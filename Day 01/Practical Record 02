@@ -1,6 +1,6 @@
 Date : 20.03.2025
-Practical Number : 01
-Problem Specification : Introduction to MySQL.
+Practical Number : 02
+Problem Specification : Create a table in MySQL.
 
 Implementation : 
 01. MariaDB [UOV]> create table exercise(PhysicianID INT(5),Name VARCHAR(30),Position VARCHAR(30));

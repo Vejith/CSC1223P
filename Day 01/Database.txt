@@ -105,12 +105,6 @@ MariaDB [UOV]> SHOW databases;
 +--------------------+
 24 rows in set (0.001 sec)
 
-MariaDB [UOV]> create table students(std_id var(15),name varchar(30),course varchar(30),DOB date,city varchar(20));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(15),name varchar(30),course varchar(30),DOB date,city varchar(20))' at line 1
-MariaDB [UOV]> create table students(std_id var30),name varchar(30),course varchar(30),DOB date,city varchar(30));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '),name varchar(30),course varchar(30),DOB date,city varchar(30))' at line 1
-MariaDB [UOV]> create table students(std_id VAR(15),name VARCHAR(30),course VARCHAR(30),DOB DATE,city VARCHAR(20));
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(15),name VARCHAR(30),course VARCHAR(30),DOB DATE,city VARCHAR(20))' at line 1
 MariaDB [UOV]> create table students(std_id VARCHAR(15),name VARCHAR(30),course VARCHAR(30),DOB DATE,city VARCHAR(20));
 Query OK, 0 rows affected (0.012 sec)
 
